@@ -51,10 +51,8 @@ public class Calculate {
 
             // If the token is an operator (the "queue operator") then:
             else if (parenOrOp(selectedToken) == false) {
-                System.out.println("hi");
                 // while there is an operator token at the top of the stack (peek) (the "stack operator"), and the stack operator has greater precedence than the queue operator,
                 if (stack.isEmpty() == false && stack.peek() instanceof Character) {
-                    System.out.println("heyoo");
                     // pop the stack operator off the stack and add it to the output queue;
                     int firstPrecedent = getPrec(stack.peek());
                     int objPrecendence = getPrec(selectedToken);
@@ -86,7 +84,7 @@ public class Calculate {
                     
                     //Until the token at the top of the stack is a left parenthesis, pop operators off the stack onto the output queue.
                     while (!stack.peek().equals('(')) {
-                         if (stack.isEmpty() == true) {
+                        if (stack.isEmpty() == true) {
                             
                             //no left parenthesis exists then...the person inputting the expression messed up and forgot a matching paranthesis
                             throw new RuntimeException("Missing matching parenthesis.");
