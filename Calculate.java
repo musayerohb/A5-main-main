@@ -89,9 +89,6 @@ public class Calculate {
                     int firstPrecedent = getPrec(stack.peek());
                     int objPrecendence = getPrec(selectedToken);
                     
-                    // if (selectedToken.equals('^') && firstPrecedent > objPrecendence) {
-                    //     outputQueue.addLast(stack.pop());
-                    // }
 
                     if (firstPrecedent >= objPrecendence && !isRightAssociation(stack.peek(), selectedToken)) {
                         outputQueue.addLast(stack.pop());
@@ -143,7 +140,7 @@ public class Calculate {
             outputQueue.addLast(stack.pop());
         }
         // Exit.
-        
+
         Postfix postfixOperation = new Postfix(outputQueue);
         return postfixOperation.postFixArithmetic();
     }
