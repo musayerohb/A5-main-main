@@ -15,49 +15,49 @@ Postfix.java:
 
 __YES__ 1 pts: Pushes numeric tokens onto the stack
 
-_YES_ 2 pts: Processes operators by popping & combining numbers
+__YES__ 2 pts: Processes operators by popping & combining numbers
 
-___YES__ 2 pts: Produces correct answer to any valid postfix expression
+__YES__ 2 pts: Produces correct answer to any valid postfix expression
 
-_____ 1 pts: Throws an exception with an informative error message in case of malformed expressions
+__YES__ 1 pts: Throws an exception with an informative error message in case of malformed expressions
 
 
 Calculate.java:
 
-_____ 1 pts: Implements shunting-yard algorithm to produce queue of tokens
+_YES_ 1 pts: Implements shunting-yard algorithm to produce queue of tokens
 
-_____ 1 pt: Output of shunt yard passed to postfix via queue
+_YES_ 1 pt: Output of shunt yard passed to postfix via queue
 
-_____ 1 pt: Computes correct arithmetic results for +, -, *, and / operations
+_YES_ 1 pt: Computes correct arithmetic results for +, -, *, and / operations
 
-_____ 1 pt: Properly handles operators with different associative properties (e.g. ^) using the full Wikipedia algorithm
+_YES_ 1 pt: Properly handles operators with different associative properties (e.g. ^) using the full Wikipedia algorithm
 
 
 
 ## Kudos:
 
-_____ (kudos) Calculator includes additional constants & functions
+_NO_ (kudos) Calculator includes additional constants & functions
 
 
 
 ## General Items:
 
-_____ 4 pts: Program compiles without errors or warnings
+_YES_ 4 pts: Program compiles without errors or warnings
 
-_____ 2 pts: Executes fully & consistently without crashing (exception/freeze)
+_YES_ 2 pts: Executes fully & consistently without crashing (exception/freeze)
 
-_____ 2 pt: Complies with style guidelines (missing items 1 pt each):
+_YES_ 2 pt: Complies with style guidelines (missing items 1 pt each):
 
-      _____ Classes & class members all have Javadoc header comments
+      _YES_ Classes & class members all have Javadoc header comments
 
-      _____ Clear and consistent indentation of bracketed sections
+      _YES_ Clear and consistent indentation of bracketed sections
 
-      _____ Adheres to Java conventions on naming & capitalization
+      _YES_ Adheres to Java conventions on naming & capitalization
 
-      _____ Methods & variables all have clear and accurate names
+      _YES_ Methods & variables all have clear and accurate names
 
-      _____ Methods avoid confusing side effects
+      _YES_ Methods avoid confusing side effects
 
-_____ 1 pt: All required files included with submission (including completed checklist file)
+__YES__ 1 pt: All required files included with submission (including completed checklist file)
 
-_____ 1 pt: readme.md contains reflection on the assignment
+__YES__ 1 pt: readme.md contains reflection on the assignment
